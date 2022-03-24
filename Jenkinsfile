@@ -17,7 +17,7 @@ pipeline {
         
         stage('paste it') {
             steps {
-                sh 'echo 'My Name Is Eldar'> MyName3.txt'
+                sh 'echo "My Name Is Eldar"> MyName3.txt'
             }
         }
         
