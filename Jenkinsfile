@@ -9,11 +9,15 @@ pipeline {
             }
         }
         
-        stage('change the file and paste it') {
+        stage('change the file ) {
             steps {
                 sh 'cd /external'
+            }
+        }
+        
+        stage('paste it') {
+            steps {
                 sh 'echo 'My Name Is Eldar'> MyName3.txt'
-                sh 'cat MyName3.txt'
             }
         }
         
