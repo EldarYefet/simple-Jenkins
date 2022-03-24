@@ -9,7 +9,7 @@ pipeline {
             }
         }
         
-        stage('change the file ) {
+        stage('change the file') {
             steps {
                 sh 'cd /external'
             }
