@@ -5,12 +5,10 @@ pipeline {
     
         stage('add file') {
             steps {
-                sh { 
-                 'touch MyName3.txt /external'
-                 'cd /external'
-                 'echo "My Name Is Eldar"> MyName3.txt'
-                 'df -h'
-                }
+                sh 'touch MyName3.txt /external'
+                sh 'cd /external'
+                sh 'echo "My Name Is Eldar"> MyName3.txt'
+                sh 'df -h'
             }
         }
     }
